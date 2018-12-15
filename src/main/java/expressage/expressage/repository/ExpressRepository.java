@@ -9,6 +9,7 @@ import java.util.List;
 public interface ExpressRepository extends JpaRepository<Express,Long> {
     @Query("select e from Express e where e.orderStatus<4 and e.userPhone=?1")
     List<Express> findByUserPhone(String userPhone);
+
     @Query("select e from Express e where e.orderStatus=0 and e.expId=?1")
     Express findActiveExpressByExpId(Long expId);
     Express findByExpId(Long expId);
