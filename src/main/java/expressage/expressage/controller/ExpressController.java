@@ -17,7 +17,7 @@ public class ExpressController {
     @Autowired
     ExpressService expressService;
     @PostMapping("/add")
-    public int addExpressags(Express express){
+    public int addExpress(Express express){
         return expressService.addExpress(express);
     }
     @RequestMapping("/findByPhone/{userPhone}")
