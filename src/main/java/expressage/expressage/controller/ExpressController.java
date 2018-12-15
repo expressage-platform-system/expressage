@@ -3,10 +3,7 @@ package expressage.expressage.controller;
 import expressage.expressage.bean.Express;
 import expressage.expressage.service.ExpressService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,12 +13,24 @@ public class ExpressController {
 
     @Autowired
     ExpressService expressService;
+
     @PostMapping("/add")
-    public int addExpressags(Express express){
+    public int addExpress(Express express){
         return expressService.addExpress(express);
     }
+
     @RequestMapping("/findByPhone/{userPhone}")
     public List<Express> findByPhone(@PathVariable String userPhone){
         return expressService.getByUserPhone(userPhone);
+    }
+
+    @RequestMapping("/findByExpId/{expId}")
+    public Express findById(@PathVariable Long expId){
+        return expressService.getByExpId(expId);
+    }
+
+    @PostMapping("/cancel")
+    public int cancelExpress(@RequestParam Long expId){
+        return expressService.changeOrderStatus(expId,5);
     }
 }

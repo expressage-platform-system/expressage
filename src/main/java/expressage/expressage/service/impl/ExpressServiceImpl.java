@@ -5,6 +5,7 @@ import expressage.expressage.repository.ExpressRepository;
 import expressage.expressage.service.ExpressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -34,5 +35,22 @@ public class ExpressServiceImpl implements ExpressService {
     @Override
     public List<Express> getByUserPhone(String userPhone) {
         return expressRepository.findByUserPhone(userPhone);
+    }
+
+    @Override
+    public Express getByExpId(Long expId) {
+        return expressRepository.findByExpId(expId);
+    }
+
+    @Transactional
+    @Override
+    public int changeOrderStatus(Long expId, int status) {
+        Express express = expressRepository.findActiveExpressByExpId(expId);
+        if (express != null){
+            express.setOrderStatus(status);
+            expressRepository.save(express);
+            return 1;
+        }
+        return 0;
     }
 }
