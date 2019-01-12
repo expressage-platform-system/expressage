@@ -1,0 +1,249 @@
+/*导航栏颜色设置*/
+/*字体颜色天剑fontColor类样式*/
+.nav-collapse>ul>li>.fontColor {
+    color: #454954;
+}
+
+
+
+.widget-header {
+    background-color: #f8f8f8 !important;
+}
+
+/*table栏ul的样式*/
+.nav-tabs.nav-stacked>li:last-child>a,
+.nav-tabs.nav-stacked>li:first-child>a {
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+
+}
+
+#main-nav.nav-tabs.nav-stacked>li.active>a,
+#main-nav.nav-tabs.nav-stacked>li>a:hover {
+    color: #f8f8f8;
+    background-color: #454954;
+}
+
+#main-nav.nav-tabs.nav-stacked>li>a {
+    color: #7d7d89;
+    background-color: #454954;
+    border: 1px solid #000;
+    margin-bottom: -5px;
+}
+
+/*表格的样式设置*/
+#main-nav.nav-tabs.nav-stacked>li .active {
+    background-color: #8fc31f;
+    border-color: transparent;
+    border-radius: 0;
+}
+
+/*表格的背景*/
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th,
+.table-striped tbody tr:nth-child(2n) td,
+.table-striped tbody tr:nth-child(2n) th {
+    background-color: #fff;
+}
+
+
+
+
+/*图标的颜色*/
+.btnColor {
+    background-color: #8fc31f;
+}
+
+.btn-warning {
+    background-image: none;
+    /*border-color: transparent;*/
+    border: none;
+}
+
+.btn {
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-warning,
+.btn-warning:hover,
+.btn-danger,
+.btn-danger:hover,
+.btn-success,
+.btn-success:hover,
+.btn-info,
+.btn-info:hover,
+.btn-inverse,
+.btn-inverse:hover {
+    text-shadow: none;
+    color: #454954;
+    background-color: #8fc31f;
+}
+
+.btn,
+.btn-small:hover {
+    /*border-color: transparent;*/
+    box-shadow: none;
+    color: #000;
+    text-shadow: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: none;
+    background-color: #8fc31f;
+
+}
+
+
+
+
+
+
+/*nav-bar下边的边框*/
+.navBarBottom {
+    width: 100%;
+    height: 10px;
+    background-color: #8fc31f;
+    position: relative;
+}
+
+
+
+#addBtn {
+    background-color: #8fc31f;
+    background-image: none;
+}
+
+
+
+/*loginPage*/
+#login-content {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#login-header,
+#login-header h3 {
+    background: #454954;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #f8f8f8;
+}
+
+
+
+/*修改成员页面*/
+#modifyPerson>h5,
+#addPerson>h5 {
+    border-radius: 0;
+}
+
+
+/*注册页面*/
+.btn-itcast,
+.btn-itcast:hover,
+.btn-itcast:focus,
+.btn-itcast:active,
+.btn-itcast.active,
+.open .dropdown-toggle.btn-itcast {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #454954;
+    color: #f8f8f8;
+}
+
+.formArea {
+    /*background-color: #f8f8f8;*/
+}
+
+.formArea>h4 {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+#btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #8fc31f;
+    border: none;
+    color: #f8f8f8;
+}
+
+.reg>a {
+    color: #454954;
+}
+
+.reg>a:hover {
+    color: #454954;
+}
+
+
+
+/*nav-inner栏的样式*/
+.navbar-inner {
+    background-image: none;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.navbar .brand,
+.navbar .nav>li>a,
+.navbar .nav>li>a:hover {
+    color: #454954;
+    text-shadow: none;
+}
+
+
+/*表格栏*/
+.widget-content>.table>thead>tr>th {
+    background-color: #dde9c3;
+}
+
+
+
+/*footer布局*/
+#footer {
+    /*border: 1px solid red;*/
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+
+
+
+/*chart页的脚注*/
+#footer1 {
+    /*border: 1px solid red;*/
+    text-align: center;
+    line-height: 65px;
+}
+
+/*chart页面的nav-bar*/
+.page-title {
+    color: #454954;
+    background: none;
+    background-color: #f8f8f8;
+}
+
+

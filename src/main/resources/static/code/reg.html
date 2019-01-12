@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>智联天下系统管理平台</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/reg.css">
+    <link rel="stylesheet" href="../css/allStyle.css">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- 头部区域 -->
+<header id="header">
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <a href="#" class="mobile-link">
+                        <i class="icon-mobilephone"></i>
+                        <span class="spanText">智联天下系统管理</span>
+                        <!--<i class="glyphicon glyphicon-chevron-down"></i>-->
+                        <!--<img src="img/c_06.jpg" height="136" width="120" alt="扫一扫">-->
+                    </a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <i class="icon-telephone"></i>
+                    <span>****-****-**</span>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="#">关于</a>
+                    <a href="#">介绍</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="../login.html" class="btn btn-itcast btn-sm" id = "logInBtn">登录</a>
+                    <!--<a href="#" class="btn btn-link btn-sm">免费注册</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav"></div>
+    <!--添加导航条下边的小条-->
+    <div class = "navBarBottom"></div>
+    <!--/添加导航条下边的小条-->
+</header>
+<!-- /头部区域 -->
+<!--表单区域-->
+<!--左边区域-->
+<section class = "formArea">
+    <!--<h4 class = "title">注册企业账号</h4> -->
+    <!--<form action="1.php" method="post">-->
+    <!--<input type="text" placeholder="用户名/绑定的手机或邮箱">-->
+    <!--<input type="password" placeholder="密码">-->
+    <!--<input type="submit">-->
+    <!--</form>-->
+    <h4>注册账号</h4>
+    <div class = "formBox">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <!--<label for="inputEmail3" class="col-sm-2 control-label">账号</label>-->
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="公司名称" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPassword1" placeholder="公司登记号">
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="员工数量">
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="登录名">
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="登录密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword5" placeholder="确认密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword6" placeholder="负责人">
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<label for="inputPassword3" class="col-sm-2 control-label">密码</label>-->
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPassword7" placeholder="负责人电话">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <!--<label>-->
+                            <!--<input type="checkbox">-->
+
+                        <!--</label>-->
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" id = "btn" value = "注册">
+                </div>
+            </div>
+            <div class = "reg">
+                <a href="../login.html">有账号？去登录--></a>
+            </div>
+        </form>
+    </div>
+</section>
+<!--/左边区域-->
+
+<!--右边区域-->
+<section class = "imgArea" id = "imArea">
+    <div class = "pic"></div>
+
+</section>
+<!--/右边区域-->
+
+<!--脚注-->
+<footer id = "footer">
+    <div class = "footBar"></div>
+</footer>
+<!--/脚注-->
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

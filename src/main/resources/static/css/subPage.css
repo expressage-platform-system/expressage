@@ -1,0 +1,31 @@
+ .sub1 {
+     width: 100%;
+     max-width: 1200px;
+     margin: 40px auto;
+     padding: 0 20px;
+     box-sizing: border-box;
+     z-index: 1000;
+     display: none;
+     position: absolute;
+     top: 10%;
+     left: 50%;
+     margin-left: -500px;
+
+ }
+
+ .row1 {
+     display: flex;
+     flex-wrap: wrap;
+     list-style-type: none;
+     padding: 0;
+
+ }
+
+ .span10 {
+     flex-grow: 1;
+     flex-basis: 200px;
+     text-align: center;
+     margin: 100px auto;
+     background-color: #fff;
+     opacity: .9;
+ }

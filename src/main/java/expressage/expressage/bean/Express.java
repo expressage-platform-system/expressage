@@ -28,6 +28,7 @@ public class Express {
     private int orderStatus;
     private String adminNum;
     private String commitTime;
+    private String amPm;
 
     public Long getExpId() {
         return expId;
@@ -163,5 +164,13 @@ public class Express {
 
     public void setCommitTime(String commitTime) {
         this.commitTime = commitTime;
+    }
+
+    public String getAmPm() {
+        return amPm;
+    }
+
+    public void setAmPm(String amPm) {
+        this.amPm = amPm;
     }
 }

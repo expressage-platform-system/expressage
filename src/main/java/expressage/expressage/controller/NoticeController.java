@@ -14,28 +14,34 @@ public class NoticeController {
     @Autowired
     NoticeService noticeService;
 
-    @GetMapping("/")
+    @GetMapping("/all")
     private List<Notice> getAllNotice() {
         return noticeService.getAllNotice();
     }
 
-    @PostMapping("/add")
-    private int addNotice(Notice notice, String publisher) {
-        return noticeService.addNotice(notice, publisher);
+    @GetMapping("/getOne/{noticeId}")
+    private Notice getOne(@PathVariable Long noticeId){
+        Notice notice = noticeService.getOne(noticeId);
+        return notice;
     }
 
-    @PostMapping("/del/{noticeId}")
-    private int delNotice(@PathVariable long noticeId) {
+    @PostMapping("/add")
+    private int addNotice(Notice notice, String publisher) {
+        return noticeService.addNotice(notice);
+    }
+
+    @PostMapping("/del")
+    private int delNotice(@RequestParam long noticeId) {
         return noticeService.delNotice(noticeId);
     }
 
-    @PostMapping("top/{noticeId}")
-    private int topNotice(@PathVariable long noticeId) {
+    @PostMapping("/top")
+    private int topNotice(@RequestParam long noticeId) {
         return noticeService.topNotice(noticeId);
     }
 
-    @PostMapping("cancel/{noticeId}")
-    private int cancelTopNotice(@PathVariable long noticeId) {
+    @PostMapping("/cancel")
+    private int cancelTopNotice(@RequestParam long noticeId) {
         return noticeService.cancelTopNotice(noticeId);
     }
 }

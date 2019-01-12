@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("admin")
+@RequestMapping("/admin")
 public class AdminController {
     @Autowired
     AdminsService adminsService;
 
-    @PostMapping("login")
+    @PostMapping("/login")
     public int appLogin(@RequestParam String adminNum, @RequestParam String adminPasswd){
         Admins admins = adminsService.appLogin(adminNum);
         if (admins != null && admins.getAdminPasswd().equals(adminPasswd)){

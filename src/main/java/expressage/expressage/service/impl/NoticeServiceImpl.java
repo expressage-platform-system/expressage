@@ -16,18 +16,18 @@ public class NoticeServiceImpl implements NoticeService {
     @Autowired
     NoticeRepository noticeRepository;
 
+    @Transactional
     @Override
-    public int addNotice(Notice notice, String publisher) {
+    public int addNotice(Notice notice) {
 
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
-        notice.setPublisher(publisher);
         notice.setReleaseTime(timestamp);
         noticeRepository.save(notice);
-
         return 1;
     }
 
+    @Transactional
     @Override
     public int delNotice(long noticeId) {
 
@@ -46,7 +46,7 @@ public class NoticeServiceImpl implements NoticeService {
         List<Notice> noticeList = noticeRepository.findByPriority();
         System.out.println(noticeList.size());
 
-        if (noticeList.isEmpty()||noticeList.size() < 3) {
+        if (noticeList.isEmpty()||noticeList.size() < 2) {
             Notice notice = noticeRepository.findByNoticeId(noticeId);
 
             notice.setPriority(1);
@@ -58,6 +58,7 @@ public class NoticeServiceImpl implements NoticeService {
         }
     }
 
+    @Transactional
     @Override
     public int cancelTopNotice(long noticeId) {
 
@@ -72,5 +73,10 @@ public class NoticeServiceImpl implements NoticeService {
     @Override
     public List<Notice> getAllNotice() {
         return noticeRepository.findByDelStatus();
+    }
+
+    @Override
+    public Notice getOne(Long noticeId) {
+        return noticeRepository.findByNoticeId(noticeId);
     }
 }

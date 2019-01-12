@@ -1,0 +1,27 @@
+/*用来页面扁平化处理*/
+.icon-ok，
+.icon-home,
+.icon-pencil,
+.icon-th-large,
+.icon-lock,
+.icon-th-list{
+    box-shadow: none;
+    text-shadow: none;
+}
+.btn{
+    border: none;
+    background:rgba(3,3,3,.3);
+    text-shadow: none;
+    box-shadow:none;
+}
+.action{
+    box-shadow:none;
+    text-shadow:none;
+
+}
+.nav-tabs > li{
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    /*background-color: rgba(3,3,3,.3);*/
+}
